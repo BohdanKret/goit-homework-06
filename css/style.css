@@ -193,6 +193,8 @@ button {
 }
 
 .header_mob-munu {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     background-color: #FFF;
@@ -202,6 +204,7 @@ button {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    overflow: auto;
 }
 
 .mob-menu_close-btn {
@@ -234,9 +237,9 @@ button {
     fill: #FFF;
 }
 
-.mob-menu-list {}
-
-.mob-menu-item {}
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+}
 
 .mob-menu-link {
     color: #2E2F42;
@@ -245,25 +248,63 @@ button {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-menu_address {}
+.mob-menu-link:hover {
+    color: #404BBF;
+}
 
-.mob-menu_address-list {}
+.mob-menu_contacts {
+    margin-top: auto;
+}
 
-.mob-menu_address-item {}
+.mob-menu_address {
+    margin-top: auto;
+    margin-bottom: 48px;
+}
 
-.mob-menu_address-link {}
+.mob-menu_address-item:not(:last-child) {
+    margin-bottom: 24px;
+}
 
-.mob-menu_soclist {}
+.mob-menu_address-link {
+    color: #434455;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+}
 
-.soclist {}
+.soclist {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
 
-.soclist-item {}
+.socicons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.socicons-link {}
+.mob-menu-icons {
+    fill: #F4F4FD;
+}
 
-.mob-menu-icons {}
+.soclist .socicons-link:hover,
+.soclist .socicons-link:focus,
+.soclist .socicons-link:active {
+    background-color: #404BBF;
+}
 
 /* -------------------------------------*/
 
