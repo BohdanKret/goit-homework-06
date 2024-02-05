@@ -86,6 +86,7 @@ button {
 }
 
 .header_nav-logo {
+    padding: 17.5px 0;
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -174,6 +175,95 @@ button {
     color: #404BBF;
     cursor: pointer;
 }
+
+.header_open-menu-btn {
+    background-color: #FFF;
+}
+
+.header_open-menu-icon {
+    border-radius: 4px;
+    fill: #2F2F37;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header_open-menu-btn:hover .header_open-menu-icon {
+    fill: #FFFFFF;
+    background-color: #404BBF;
+
+}
+
+.header_mob-munu {
+    position: fixed;
+    top: 0;
+    background-color: #FFF;
+    width: 100%;
+    height: 100vh;
+    padding: 24px 24px 40px 16px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.mob-menu_close-btn {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin-left: auto;
+    margin-bottom: 24px;
+    border-radius: 50%;
+    border: 1px solid #E7E9FC;
+    background-color: #FFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu_close-btn:hover {
+    border: none;
+    background-color: #404BBF;
+}
+
+.mob-menu_close-icons {
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu_close-btn:hover>.mob-menu_close-icons {
+    fill: #FFF;
+}
+
+.mob-menu-list {}
+
+.mob-menu-item {}
+
+.mob-menu-link {
+    color: #2E2F42;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.mob-menu_address {}
+
+.mob-menu_address-list {}
+
+.mob-menu_address-item {}
+
+.mob-menu_address-link {}
+
+.mob-menu_soclist {}
+
+.soclist {}
+
+.soclist-item {}
+
+.socicons-link {}
+
+.mob-menu-icons {}
 
 /* -------------------------------------*/
 
@@ -844,7 +934,7 @@ button {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_checkbox:checked + .checkbox_label span {
+.modal_checkbox:checked+.checkbox_label span {
     border: none;
     background-color: #404BBF;
     fill: #F4F4FD;
@@ -976,7 +1066,7 @@ button {
         width: 264px;
     }
 
-        /* -------------------------------------- */
+    /* -------------------------------------- */
 
     .modal {
         width: 408px;
